@@ -1,0 +1,18 @@
+<test-fixture id="icon-toggle-fixture">
+    <template>
+        <icon-toggle toggle-icon="favorite" pressed="{{isFav}}"></icon-toggle>
+    </template>
+</test-fixture>
+
+<script>
+  suite('<icon-toggle>', function() {
+    var myEl;
+    setup(function() {
+      myEl = fixture('icon-toggle-fixture');
+    });
+    
+    test('defines the "author" property', function() {
+      assert.equal(myEl.author.name, 'Dimitri Glazkov');
+    });
+  });
+</script>

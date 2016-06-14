@@ -1,0 +1,44 @@
+09:56:00.761 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to /Users/fprovost/Documents/chromedriver
+09:56:00.793 INFO - Java: Oracle Corporation 25.91-b14
+09:56:00.793 INFO - OS: Mac OS X 10.11.5 x86_64
+09:56:00.802 INFO - v2.53.0, with Core v2.53.0. Built from revision 35ae25b
+09:56:00.864 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+09:56:00.865 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+09:56:00.865 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+09:56:00.865 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+09:56:00.867 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+09:56:00.867 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+09:56:00.917 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+09:56:00.917 INFO - Selenium Server is up and running
+09:56:01.176 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Icon Toggle Spec, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+09:56:01.184 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Icon Toggle Spec, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.22.397929 (fb72fb249a903a0b1041ea71eb4c8b3fa0d9be5a) on port 48148
+Only local connections are allowed.
+09:56:02.300 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Icon Toggle Spec, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+09:56:02.316 INFO - Executing: [get: http://localhost:8080/components/icon-toggle/demo/])
+09:56:02.715 INFO - Done: [get: http://localhost:8080/components/icon-toggle/demo/]
+09:56:02.727 INFO - Executing: [find elements: By.cssSelector: body])
+09:56:02.766 INFO - Done: [find elements: By.cssSelector: body]
+09:56:02.771 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (773fe7615521c7915cc6c4b6a6e6de51)] -> css selector: body]])
+09:56:02.788 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (773fe7615521c7915cc6c4b6a6e6de51)] -> css selector: body]]
+09:56:02.797 INFO - Executing: [find element: By.cssSelector: icon-toggle])
+09:56:02.839 INFO - Done: [find element: By.cssSelector: icon-toggle]
+09:56:02.844 INFO - Executing: [click: 1 [[ChromeDriver: chrome on MAC (773fe7615521c7915cc6c4b6a6e6de51)] -> css selector: icon-toggle]])
+09:56:02.884 INFO - Done: [click: 1 [[ChromeDriver: chrome on MAC (773fe7615521c7915cc6c4b6a6e6de51)] -> css selector: icon-toggle]]
+09:56:02.890 INFO - Executing: [find element: By.cssSelector: icon-toggle])
+09:56:02.907 INFO - Done: [find element: By.cssSelector: icon-toggle]
+09:56:02.910 INFO - Executing: [get element attribute: 1 [[ChromeDriver: chrome on MAC (773fe7615521c7915cc6c4b6a6e6de51)] -> css selector: icon-toggle], pressed])
+09:56:02.920 INFO - Done: [get element attribute: 1 [[ChromeDriver: chrome on MAC (773fe7615521c7915cc6c4b6a6e6de51)] -> css selector: icon-toggle], pressed]
+09:56:02.925 INFO - Executing: [find element: By.cssSelector: #test2])
+09:56:02.948 INFO - Done: [find element: By.cssSelector: #test2]
+09:56:02.963 INFO - Executing: [get text: 2 [[ChromeDriver: chrome on MAC (773fe7615521c7915cc6c4b6a6e6de51)] -> css selector: #test2]])
+09:56:02.985 INFO - Done: [get text: 2 [[ChromeDriver: chrome on MAC (773fe7615521c7915cc6c4b6a6e6de51)] -> css selector: #test2]]
+09:56:03.196 INFO - Executing: [find element: By.cssSelector: #test])
+09:56:03.213 INFO - Done: [find element: By.cssSelector: #test]
+09:56:03.217 INFO - Executing: [get text: 3 [[ChromeDriver: chrome on MAC (773fe7615521c7915cc6c4b6a6e6de51)] -> css selector: #test]])
+09:56:03.238 INFO - Done: [get text: 3 [[ChromeDriver: chrome on MAC (773fe7615521c7915cc6c4b6a6e6de51)] -> css selector: #test]]
+09:56:03.242 INFO - Executing: [delete session: 60652df8-a723-4699-8829-fa41ff6e263c])
+09:56:03.321 INFO - Done: [delete session: 60652df8-a723-4699-8829-fa41ff6e263c]

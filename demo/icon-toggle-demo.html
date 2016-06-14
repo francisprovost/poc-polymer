@@ -1,0 +1,51 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../../iron-ajax/iron-ajax.html">
+<link rel="import" href="../../iron-icons/iron-icons.html">
+<link rel="import" href="../icon-toggle.html">
+
+
+<dom-module id="icon-toggle-demo">
+  <template>
+    <style>
+      :host {
+        font-family: sans-serif;
+        --icon-toggle-color: lightgrey;
+        --icon-toggle-outline-color: black;
+        --icon-toggle-pressed-color: red;
+      }
+    </style>
+
+    <h3>Statically-configured icon-toggles</h3>
+    <iron-ajax auto url="http://jsonplaceholder.typicode.com/posts/1" handle-as="json" last-response="{{ajaxResponse}}"></iron-ajax>
+    <span id="test">{{printJson(ajaxResponse)}}</span>
+    <span id="test2">salut</span>
+    <icon-toggle id="id" toggle-icon="star"></icon-toggle>
+    <!-- <icon-toggle toggle-icon="star" pressed></icon-toggle> -->
+
+    <h3>Data-bound icon-toggle</h3>
+
+    <!-- use a computed binding to generate the message -->
+    <div><span>[[message(isFav)]]</span></div>
+
+    <!-- curly brackets ({{}}} allow two-way binding -->
+    <!-- <icon-toggle toggle-icon="favorite" pressed="{{isFav}}"></icon-toggle> -->
+  </template>
+
+  <script>
+    var printJson = function (object) {
+      return JSON.stringify(object.userId);
+    }
+    Polymer({
+      is: "icon-toggle-demo",
+      message: function(fav) {
+        if (fav) {
+          return "You really like me!";
+        } else {
+          return "Do you like me?";
+        }
+      },
+      printJson: printJson
+    });
+
+  </script>
+</dom-module>
